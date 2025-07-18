@@ -12,8 +12,6 @@ A beautiful and simple Flutter weather application.
 - Pull-to-refresh
 - Error handling for network issues
 
-## Screenshots
-<!-- Add screenshots here -->
 
 ## Getting Started
 
