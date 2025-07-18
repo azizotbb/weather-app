@@ -14,8 +14,8 @@ class RemoteDataSource implements BaseRemoteDataSource {
   Future<WeatherModel> getWeatherByCityName(String city) async{
     final dio = Dio();
     try{
-  final response = await dio.get('${AppConstance.apiBaseUrl}/weather?q=${city}t&appid=${AppConstance.apiKey}');
-  return WeatherModel.fromJson(jsonDecode(response.data));
+  final response = await dio.get('${AppConstance.apiBaseUrl}/weather?q=${city}&appid=${AppConstance.apiKey}');
+  return WeatherModel.fromJson(response.data);
 
     }catch(_){
       throw Exception('Failed to fetch weather data');

@@ -4,6 +4,7 @@ class Weather {
   final int pressure;
   final String main;
   final String description;
+  final double temp ;
 
-  Weather(this.id, this.cityName, this.pressure, this.main, this.description);
+  Weather(this.id, this.cityName, this.pressure, this.main, this.description, this.temp);
 }
